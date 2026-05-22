@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<section class="section">
+    <h2>My Work</h2>
+ <!-- Filter Buttons at the top -->
+    <div class="filters">
+        <button class="btn active" onclick="filterSelection('all')">All</button>
+        <button class="btn" onclick="filterSelection('lifestyle')">Lifestyle</button>
+        <button class="btn" onclick="filterSelection('couples')">Couples</button>
+        <button class="btn" onclick="filterSelection('friends')">Friends</button>
+    </div>
+
+    <div class="gallery">
+        <img src="images/pic 2.jpeg" class="gallery-item lifestyle" alt="Lifestyle Photography" onclick="openModal(this.src)">
+        <img src="images/pic 11.jpeg" class="gallery-item couples" alt="Couples Photography" onclick="openModal(this.src)">
+        <img src="images/pic 3.jpeg" class="gallery-item friends" alt="Friends Photography" onclick="openModal(this.src)">
+        <img src="images/pic 7.jpeg" class="gallery-item lifestyle" alt="Lifestyle Photography" onclick="openModal(this.src)">
+        <img src="images/pic 5.jpeg" class="gallery-item couples" alt="Couples Photography" onclick="openModal(this.src)">
+        <img src="images/pic 6.jpeg" class="gallery-item friends" alt="Friends Photography" onclick="openModal(this.src)">
+</div>  
+</section>
+    <script src="script.js"></script>
+
+</body>
+</html>
